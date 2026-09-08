@@ -1,0 +1,61 @@
+{
+  "name": "@ebubekirylmaz/flowkit",
+  "version": "0.1.0",
+  "description": "A node-based workflow editor library with a real execution engine on top — pan/zoom, drag, connect, cut/paste, and a topological runner with branch-aware failure isolation.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Ebubekir Yılmaz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebubekirylmaz/flowkit.git"
+  },
+  "homepage": "https://github.com/ebubekirylmaz/flowkit#readme",
+  "keywords": [
+    "react",
+    "workflow",
+    "node-editor",
+    "flow",
+    "automation",
+    "canvas",
+    "execution-engine"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/flow.cjs",
+  "module": "./dist/flow.js",
+  "exports": {
+    ".": {
+      "import": "./dist/flow.js",
+      "require": "./dist/flow.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@mui/material": "^7.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "dependencies": {
+    "@iconify/react": "^5.0.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@mui/material": "^7.3.9",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.11",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.4"
+  }
+}
