@@ -6,7 +6,7 @@ A node-based workflow editor library — plus a real execution engine on top of 
 npm install @ebubekirylmaz/flowkit
 ```
 
-**[Live demo →](#)** _(a PR-review-bot pipeline built on this package — coming soon)_
+**[Live demo →](https://pulseflowexample.netlify.app/)** _(PulseFlow, an AI PR-review-bot pipeline built on this package)_
 
 ## The problem
 
@@ -44,7 +44,7 @@ function App() {
 }
 ```
 
-See the [live demo](#) for a fuller example — custom node rendering via the plugin pattern, branching, and failure isolation.
+See the [live demo](https://pulseflowexample.netlify.app/) for a fuller example — custom node rendering via the plugin pattern, branching, and failure isolation.
 
 ## Editor features
 
@@ -84,7 +84,7 @@ npm test
 
 ## Future work
 
-- **TypeScript** — the codebase is untyped JS/JSX today; a migration is a deliberate future step, not an oversight (see the JSDoc on the execution engine's public functions for what that would look like).
+- **TypeScript** — the codebase is untyped JS/JSX today; a migration is a deliberate future step, not an oversight.
 - **Minimap** — not implemented yet; a synced, click-to-jump overview of the canvas.
 - **DAG convergence** — a node with more than one parent isn't representable in the current linked-list model; the execution engine would need a real dependency-count join instead of a single-parent assumption.
 
